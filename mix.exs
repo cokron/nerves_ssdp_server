@@ -22,8 +22,10 @@ defmodule Nerves.SSDPServer.Mixfile do
   end
 
   defp deps do
-    [ {:nerves_ssdp_client, github: "nerves-project/nerves_ssdp_client", only: :test},
-      {:ex_doc, "~> 0.11", only: :dev} ]
+    [
+      {:nerves_ssdp_client, github: "cokron/nerves_ssdp_client", only: :test},
+      {:ex_doc, "~> 0.11", only: :dev}
+    ]
   end
 
   defp docs do
